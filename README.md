@@ -6,7 +6,7 @@ Before you start rambling, you need to create "slices", 1 second audio clips tha
 To slice, simply run the script with the -s arguement<br />
 <br />
 <code>./rambler.py -s sound.wav</code><br />
-<br /
+<br />
 This will create the slices and store them in a directory titled "slices"<br />
 NOTE: the script only accepts wav files!
 
