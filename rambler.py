@@ -1,10 +1,10 @@
 #! /usr/bin/env python3
-# Brandon Vincent 3/27/21
+# Brandon Vincent 3/16/22
 # plays overlapping audio clips to simulate a microphone jammer
 # syntax: rambler.py [-s] <file>
 
 # GPLv2 statement
-# This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+# This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later ver>
 # This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 # You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
@@ -24,7 +24,7 @@ def slice(): # takes a file and slices it into 1s segments, then stores them in 
                 print("Wrong filename or bad permissions")
                 exit()
 
-        for fromtime in range(len(os.listdir("slices")), int(int(whole.duration_seconds) - 1) + len(os.listdir("slice>
+        for fromtime in range(len(os.listdir("slices")), int(int(whole.duration_seconds) - 1) + len(os.listdir("slices"))):
                 clip = whole[int(fromtime * 1000):int(fromtime * 1000 + 1000)]
                 clip.export("slices/"+str(fromtime)+".wav", format="wav")
 
